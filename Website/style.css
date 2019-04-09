@@ -1,0 +1,346 @@
+/*  
+THEME NAME: HTML5;
+DATE: JAN 2019;
+DISCRIPTION :LEARN BASIC HTML5;
+VERSION:1.0;
+AUTHOR: HAYA KIRATA;
+*/ 
+
+body {
+    background-image: url ("img/bodybg.jpg");
+    
+   font-size: 87%;/* base font-size =14px*/
+    font-family: Arial, 'Lucida Sans Unicode';
+    line-height: 1.5;
+    text-align: left;
+}
+a{
+    
+    text-decoration: none;
+
+}
+a:link, a:visited {color: brown;}
+a:hover, a:active { color:crimson;}
+
+.body{
+    
+
+    margin: 0 auto; 
+    width: 70%;
+    clear: both;
+    
+}
+/*--------------MAIN HEADER ----------*/
+.mainheader img {
+    width: 100%;
+    height: 250;
+}
+
+
+.mainheader nav {
+    width: 100%;
+    background-color: burlywood;
+    height:40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+}
+.mainheader nav ul {
+    text-align: center;
+    list-style:none;
+    margin: 0 auto;
+    
+    
+
+}
+.mainheader nav ul li {
+    display: inline;
+
+}
+
+
+.mainheader a:link, .mainheader a:visited{
+    padding: 10px 0px;
+    width: 24%;
+    color:brown;
+    font-weight: bold;
+    display: inline-block;
+    height: 20px; 
+    
+    
+}
+
+.mainheader a:hover, .mainheader a:active
+
+{
+    color:brown;
+    background-color: antiquewhite;
+    text-shadow: none; 
+    
+}
+/*--------------------MAIN CONTENT ----------*/ 
+
+
+.mainContent{
+    width: 70%;
+    float: left;
+    
+}
+.top-content  {
+    background-color: antiquewhite;
+    padding-top : 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+padding-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 5%; 
+    -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+    
+    
+    
+}
+.post-info{
+    
+    font-size: 90%;
+    color:darkgrey;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.post-content {
+    display: block;
+    
+}
+/*----------------- SIDE BAR---------------*/
+
+
+
+.thesidebar{
+    
+    width: 24%;
+    margin: 2% 0 0 2%;
+    float: left;
+    padding: 2%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+      -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+}
+ 
+.footer{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    background-color: burlywood;
+    height:40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.footer p {
+    
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+}
+
+.post-img{
+    
+    width: 100%;
+}
+
+
+figure{
+    text-align: center;
+    font-size: 80%;
+color: darkgray;
+    margin: 25px 0;
+}
+
+
+audio{
+    
+width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+        
+}
+
+video {
+    
+    width: 90%;
+     padding-left: 5%;
+    padding-right: 5%;
+        
+}
+
+/*---------------------------css3 for mobile ------*/
+   
+
+@media screen and (max-width: 480px){
+    .body {
+
+    width: 90%;
+        font-size: 95%;
+        
+     
+    }
+
+.mainheader nav {
+  
+    height:160px;
+    font-size: 90%;
+ 
+}
+.mainheader nav ul {
+    text-align: center;
+    list-style:none;
+    margin: 0 auto;
+    padding: 0;
+    
+    
+
+}
+.mainheader nav ul li {
+    display: block;
+
+}
+
+
+.mainheader a:link, .mainheader a:visited{
+    padding: 10px 0px;
+    width:100%;
+    color:brown;
+    font-weight: bold;
+    display: inline-block;
+    height: 20px; 
+    
+    
+}
+    .mainContent{
+    width: 100%;
+    float: left;
+    
+}
+ .thesidebar{
+     
+    
+    width: 90%;
+    margin: 3%;   
+}
+
+}
+@media screen and (max-width:680px)
+{
+    
+       .body {
+
+        width: 90%;
+        font-size: 95%;
+        
+     
+    }
+    .mainheader nav{
+        
+        font-size: 80%;
+    }
+    
+    
+}
+----------------------- * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
